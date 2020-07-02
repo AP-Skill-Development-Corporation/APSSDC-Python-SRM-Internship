@@ -1,0 +1,29 @@
+Good morning all:
+-------------------------
+    --> Run server:
+            - to run django server, we have to open cmd from project location.
+            - there we have to enter a cmd,
+                'python manage.py runserver'
+    -->app creation:
+            -->open cmd from ur project loaction
+            -->here we have to type a cmd
+                'python manage.py startapp appname'
+            -->we have to register our app in settings.py
+
+    -->now i have to display a small mesage when user request for hi
+            ex:127.0.0.1:8000/hi
+        -->in urls.py, we have to create new url, for that u have to path()
+            from myapp1 import views
+            path(url name,function,name  of the url)
+        -->in views.py:
+
+    -->dynamic url mappig:
+        path('hi1/<str:val>','','')
+        path('hi1/<int:val>','','')
+
+
+
+
+
+            
+        
