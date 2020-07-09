@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>External CSS</title>
+	<link rel="icon" type="text/css" href="{% static 'images/logo.png' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/demo.css' %}">
+</head>
+<body>
+<h2> Sample Example </h2>
+<h5> Welcome to Django Session </h5>
+<h3> This is Sample exmaple for a table </h3>
+<table border="2">
+	<tr>
+		<th>Name</th>
+		<th>Age</th>
+		<th>Salary</th>
+	</tr>
+	<tr id="fr">
+		<td>Raju</td>
+		<td>24</td>
+		<td>23000</td>
+	</tr>
+	<tr>
+		<td>Kiran</td>
+		<td>20</td>
+		<td>28000</td>
+	</tr>
+	<tr>
+		<td>Kumar</td>
+		<td>22</td>
+		<td>22000</td>
+	</tr>
+</table>
+
+<img src="{% static 'images/sample.jpg' %}" alt="sampleimage">
+</body>
+</html>

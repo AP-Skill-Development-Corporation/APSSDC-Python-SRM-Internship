@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register Page</title>
+	<link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}">
+</head>
+<body>
+<h1> This is a Registration Page </h1>
+<form method="GET" action="#">
+	{% csrf_token %}
+	<label>Username: </label>
+	<input type="text"></br>
+	<label>Password: </label>
+	<input type="password"></br>
+	<label>Gender: </label>
+	<input type="radio" name="gender" value="m">Male
+	<input type="radio" name="gender" value="f">Female</br>
+	<label>Select Your language:</label>
+	<select>
+		<option value="0">---Select your lang---</option>
+		<option value="tel">Telugu</option>
+		<option value="eng">English</option>
+		<option value="tam">Tamil</option>
+	</select></br>
+	<label>Address: </label>
+	<textarea></textarea></br>
+	<input type="submit" value="Register" id="bst">
+</form>
+</body>
+</html>

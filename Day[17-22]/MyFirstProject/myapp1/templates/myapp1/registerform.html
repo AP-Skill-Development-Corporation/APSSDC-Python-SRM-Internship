@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Registration Form</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+	<div class="jumbotron col-md-6" style="margin: auto;background-color: cadetblue;margin-top: 50px;">
+		<h2>Registration Form</h2>
+		<form method="POST" action="">
+			{% csrf_token %}
+			<input type="text" class="form-control col-md-8" placeholder="Enter Username" required name="uname"></br>
+			<input type="password" class="form-control col-md-8" placeholder="Enter password" required name="pwd"></br>
+			Gender:
+			<input type="radio" name="gender" value="m" class="form-input-check"> Male
+			<input type="radio" name="gender" value="fm" class="form-input-check"> Female<br/>
+			<select class="form-control col-md-8" name="lang">
+				<option>----Select a language----</option>
+				<option value="tel">Telugu</option>
+				<option value="eng">English</option>
+			</select></br>
+			<!-- <input type="file" class="form-control-file" name="up"></br> -->
+			<textarea class="form-control col-md-8" required name="msg"></textarea></br>
+			<button class="btn btn-danger">Register</button>
+		</form>
+	</div>
+</div>
+</body>
+</html>
