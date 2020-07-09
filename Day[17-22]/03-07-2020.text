@@ -1,0 +1,399 @@
+03-07-2020:
+===========
+
+	Good Morning to All
+	
+	Url -> Views [url -> checking the present url in urls.py 
+	views -> just printing or displaying the content in html] [scripting will allows in djnago i.e., from .py[views.py]]
+	
+	Url -> Views -> Templates [.html files]
+	
+	render:
+	=======
+	{} => (key,value)
+	fo = {}
+	return render(request,'/.html')
+	
+	.html:
+	------
+	Django Template Language:[DTL]
+	=========================
+		Views {} -> html[Templates]{}}
+		name -> Rakesh
+		age -> 45
+		{{name}} -> values
+		{name} -> iteration
+	d.get('name')
+	d['name']
+	Templates:
+	==========
+	M -> Model -> Database
+	V -> Views -> Controller
+	T -> Templates -> .html [templates]
+	
+	Templates:
+	myapp1 -> templates/myapp1[userdefined]/
+						- index.html
+						- about.html
+						
+	myapp2 -> templates/myapp2/
+						- index.html
+						- about.html
+	
+	render(request,'myapp1/index.html') -> first
+	render(request,'myapp2/index.html') -> second
+
+	CSS: -> Cascading style sheets:
+	===============================
+		- font size,font family,alignments
+	Three ways to beautify our site by using this css
+		- Inline:
+			Syntax:
+				<tagname style="property:value">sometext</tagname>
+		- Internal:
+			Syntax:
+			<head>
+				<style>
+				(#,.)tagname
+				{
+					property1:value1;
+					property2:value2;
+					
+				}
+				</style>
+			</head>
+		- External:
+			Syntax:
+			<head>
+				<link rel="stylesheet" src="/.css">
+			</head>
+	
+	Static: [External Css,Js,image/video/audio]
+	--------
+		static
+			- css
+				- first.css
+				- second.css
+			- js
+				- sample.js
+			- images
+				- first.jpg
+
+04-07-2020:
+===========
+
+	Good Afternoon to All.
+	
+	<table>
+	<th></th>
+	<tr>
+	</table>
+	
+	margin:
+	
+		margin-left,right,top,bottom;
+		
+		margin: 2px;
+		
+	Images:
+	=======
+	
+		Static
+			- images[gallery,profile]
+				- first.jpg
+		
+		{% load static %}
+		
+		<img src="{% static 'images/first.jpg'%}" height="350px" width="450px">
+	
+	Javascript:
+	===========
+	events -> click,hover etc., -> buttons
+	
+	internal -> actions
+	external -> 
+	
+	functions -> a particular to execute 
+	
+	alert("this is an alert")
+	
+	Internal:
+	<head>
+		<scipt>
+		</script>
+	</head>
+	
+	<body>
+	<scipt>
+	</script>
+	</body>
+	
+	Html:
+	
+	
+	Enter a value: 45
+	Enter b value: 3
+	Addition of 45 and 3 is: 48
+	
+	
+	
+06-07-2020:
+===========
+		Good Morning to All...
+	alert(),prompt()
+	
+	Register.html
+	==============
+	-> static	
+		-> html5,css3 -> It is created by ourself 
+	
+	-> Bootstrap
+	
+	-> Form:
+		-> input tag
+			-> text
+			-> password
+			-> tel
+			-> email
+		-> select
+		-> label
+		-> radio
+			-> gender -> M or F
+		-> textarea
+			-> Address -> n number of lines of input
+		-> range -> max,min
+		-> button -> submit,reset,cancel etc.,
+	Methods:
+	========
+	
+		- GET: -> Accessing the data 
+			-> It can be accessed from a data base or else from a user.
+			-> It can displays all the values in a url
+			-> There is no security
+			-> It allows only a particular range (250 characters)
+		- POST: -> Updating a data to a database
+			-> Large data can be uploaded to a database
+			-> More secure while comparing with get
+			-> It will not displays the data in url
+	
+	Bootstrap:
+	==========
+	- It has predefined tags with responsive
+	- Online
+		-> all those libraries to our site
+	- Offline
+		-> download cdn zip file[css,js,jquery] 
+
+07-07-2020:
+===========
+
+	Good Morning to All.
+	
+	xs - very small
+	sm - small devices
+	md - medium devices
+	lg - large devices
+	
+	
+	12
+	6 - 6
+    4 - 4 - 4
+    8 - 4
+    5 - 7
+    1 - 1 - 1 - 1	
+    
+    
+    register.html5
+    Html5,css3
+    
+    Bootstrap  
+	
+08-07-2020:
+===========
+	Good Morning to All..
+	
+	
+	Login: -> Page
+	
+	username == "raju"
+	password == "123"
+	
+		username: -> userdefined raju
+		password: -> userdefined 123
+		Click -> submit
+		
+	
+	Welcome: -> page
+	
+		Welcome Raju
+		
+	Invalid username or password
+	
+	
+	Bootstrap:
+	
+	Static 
+		css
+		js
+		
+	cdn -> .zip
+	
+	Admin:
+	
+	
+	-> Admin -> C,R,U,D -> All Users 
+		-> User -> C,R,U,D
+	
+	path('admin/',)
+	
+	
+	
+	-> models: -> Databases -> (tables,fieldvalues)
+	-> Students -> upload their certificates
+				-> Update profile
+				-> Read own data
+				-> remove 
+	-> HOD -> (students)
+			-> manage -> 1-4
+			-> upload their certificates
+			-> read
+	-> from django.models import modelform
+	-> class Reg(models.Modelform):
+			name = models.CharField(max_length)
+			
+	Databases:
+	==========
+		- sqlite3
+		- Postgres
+		- Mongodb
+		- Mysql
+		
+	Regs -> table
+		id -> Auto incremented
+		name -> Field
+	
+	-> Admin -> (HOD,Students)
+	
+	
+	-> By default it consists of some tables
+	-> 11 our tables
+	
+	-> sqlite -> dbbrowser to check the database are created
+	
+	Sql -> queries 
+		-> create table table_name(
+			name datatype(lengths),
+		)
+		
+	ORM -> Object Relational Mapping
+	-> Migrations -> [own models[tables]]
+		-> python manage.py makemigrations
+		-> to create an interface to a database 
+			-> 0001.py [interface] -> migrations
+			-> 0002.py [x] -> 
+	-> Migrate
+		-> python mange.py migrate
+	
+	-> Admin
+		-> python manage.py createsuperuser 
+		-> username
+		-> email
+		-> password
+		-> confirmpassword
+	-> path(admin/,admin.sites.url)
+	
+	
+09-07-2020:
+===========
+
+	Good Morning to All...
+	
+	Admin interfeace with admin tables....
+	By using command prompt we had created admin credentails
+		-> migrate
+		-> tables -> admin
+		-> python manage.py createsuperuser
+			-> username
+			-> email
+			-> pwd
+			-> cpswd
+		-> django administration
+			-> user -> staff -> superuser roles
+	user -> admin previliges
+	
+	SQL -> create(),
+	a = create()
+	b = insert values
+	
+	ORM -> Object relational mapping:
+	================================
+	
+	object = classname()
+	
+	-> python manage.py shell
+	-> Creating,Read,Delete,Update
+	-> >>> -> Python shell
+	-> [1]: -> Interactive shell
+	
+	
+	-> from django.contrib.auth.models import Users
+	
+		-> User._meta.get_fields()
+	
+		-> d = User.objects.all()
+		
+		-> for j in d:
+				print(j.username)
+				
+	-> Models:
+	
+		-> Usertable -> classname
+			-> username -> CharField(max_length=150)
+			-> password -> CharField(max_length=50)
+			-> sal -> FloatField()
+			-> age -> IntegerField()
+		null = True
+		
+		Datatype:
+		=========
+			-> CharField() -> characters string
+			-> IntegerField() -> Integer only
+			-> FloatField() -> Float values
+			-> DateField() -> Date format
+			-> DateTimeField -> Date and present time
+			-> FileField() -> Files[.jpg,.png,.doc etc.,]
+			-> ImageField() -> Image files
+	
+	myapp1_UsRegs -> Table 
+	makemigrations and migrate
+	
+	
+	
+	To create Users
+	
+	-> n = UsReg(1,'somu','123',12000.00,23)
+	-> n.save()
+	
+	Displaying the user values with all field names:
+	
+	-> d = UsReg.objects.all()
+	-> for k in d:
+			print(k.username)
+	
+	-> Update single fieldname 
+	
+		-> d = Usreg.objects.get(username='somu')
+		-> d.password = '456'
+		-> d.save()
+		
+		
+	
+	
+	
+	
+
+
+
+
+
+
