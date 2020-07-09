@@ -108,3 +108,38 @@ Click here for notebook [--> Class Jupyter Notebook](https://github.com/AP-Skill
 - Pandas
 - Matplotlib
 
+
+### Day-5(Django session)
+#### Topics Covered
+- Explained the flow control from urls-views-templates
+    - Created Templates folder and accessed .html files with render
+    - Done sample example based on render by passing three parameters
+- Created and accessed the static folder for external files (CSS,JS,Images)
+    - Created styling for html files ie.,(inline,internal and external Css)
+### Day-6(Django session)
+#### Topics Covered
+- Explained image accessing from external folder i.e., from static folder
+    - Done sample example on image and javascript access by using in external format
+### Day-7(Django session)
+#### Topics Covered
+- Explained form inputs with sample examples
+    - Applied styling to the form by basic format by using HTML5,CSS3 etc.,
+- Explained how to apply a bootstrap for a form and to html files in online format
+    - Done sample exmaple on method attributes i.e., GET and POST
+### Day-8(Django session)
+#### Topics Covered
+- Done some more styling to html by using online bootstrap
+### Day-9(Django session)
+#### Topics Covered
+- Created login page and checked with sample data login
+    - Applied bootstrap and explained how to access the bootstrap styling to a site with sampel example
+    - Explained about databases concept and created superuser(i.e., Admin) to a site
+    - Explained about Migrations and migrate for creating and modification of tables in databases
+- Created users in Admin panel and given permissions for those users as admin or login access
+### Day-10(Django session)
+#### Topics Covered
+- Explained about ORM and datatypes that can used to create a table in database
+    - Created user tables with some fields and accessed from admin panel
+    - Created user record through shell, admin panel
+    - Explained how to access particular record and for all users
+    
