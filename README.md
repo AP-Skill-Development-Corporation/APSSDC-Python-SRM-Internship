@@ -142,4 +142,23 @@ Click here for notebook [--> Class Jupyter Notebook](https://github.com/AP-Skill
     - Created user tables with some fields and accessed from admin panel
     - Created user record through shell, admin panel
     - Explained how to access particular record and for all users
-    
+### Day-11(Django session)
+#### Topics Covered
+- Explained about creation of single and bulk users in shell
+    - How to access first,last,in_bulk records in shell
+    - How to update single record and column value in shell
+    - How to use get and filter in shell for retrieve and to delete single or multi records
+- Created .html to display all the users data in table format
+### Day-12(Django session)
+#### Topics Covered
+- Explanation about widget and their field data types with attributes
+    - Created widgets to a particular form by using forms.Form in forms.py
+    - Applied a widget to create a record
+    - View single user data and delete the data by selecting their names in list
+### Day-13(Django session)
+#### Topics Covered
+- Done updation to a single record in a database table
+- Explained the Mail sending and Messages concept with sample example
+### Day-14(Django session)
+#### Topics Covered
+- Explained about image uploading and retrieving concept through database
