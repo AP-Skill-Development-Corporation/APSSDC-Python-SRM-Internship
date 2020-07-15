@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User registration</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="{% static '/css/bootstrap.min.css' %}">
+</head>
+<body>
+<div class="container">
+	<div class="jumbotron col-md-5" style="margin: auto;margin-top:30px">
+		<form method="POST" action="" enctype="multipart/form-data">
+			{% csrf_token %}
+			<table class="table">
+				{% for k in usg %}
+				<tr>
+					<td>{{k}}</td>
+				</tr>
+				{% endfor %}
+			</div>
+			</table>
+		<button class="btn btn-primary" type="submit">Register</button>
+		</form>
+	</div>
+</div>
+</body>
+</html>

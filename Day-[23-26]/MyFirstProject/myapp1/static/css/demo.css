@@ -1,0 +1,37 @@
+h2
+{
+	font-size: 50px;
+	background-color: green;
+	color: yellow;
+}
+h5
+{
+	font-size: 40px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+th
+{
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-size: 30px;
+}
+
+table
+{
+	margin: auto;
+	background-color: yellow;
+}
+
+td
+{
+	padding: 13px;
+}
+#fr
+{
+	background-color: green;
+	color:red;
+}

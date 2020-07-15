@@ -1,0 +1,33 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Single User View</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="{% static '/css/bootstrap.min.css' %}">
+</head>
+<body>
+	<div class="container">
+		<div class="row" style="margin:auto;margin-top:30px">
+			<div class="col-md-5">
+				<h2>Image</h2>
+				<div class="card" style="width:400px">
+				  <img class="card-img-top" src="{{data.imgup.url}}" alt="Card image" width="230px" height="230px">
+				  <div class="card-body">
+				    <h4 class="card-title">{{data.username}}</h4>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-7">
+				<div class="jumbotron" style="margin-top:45px">
+					<h3>Description of User</h3>
+					<h4>Your Username is: {{data.username}}</h4>
+					<h4>Your Age is: {{data.age}}</h4>
+					<h4>Your Salary is: {{data.salary}}Rupees</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

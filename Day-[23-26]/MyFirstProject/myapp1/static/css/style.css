@@ -1,0 +1,22 @@
+form
+{
+	margin-left: 30%;
+    margin-right: 30%;
+    padding: 30px;
+    font-size: 25px;
+    background-color: darkcyan;
+}
+
+input, textarea
+{
+	background-color: green;
+	color:white;
+}
+
+#bst
+{
+	background-color: blue;
+	color: white;
+	padding:10px;
+	border-radius: 5px 5px 5px 5px;
+}
