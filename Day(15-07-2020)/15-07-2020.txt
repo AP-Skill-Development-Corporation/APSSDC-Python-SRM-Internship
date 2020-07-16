@@ -1,0 +1,18 @@
+Good morning all:
+-------------------------
+    -->User Registration and Authentication:
+        User Authentication:
+            --> we have 2 diff ways
+                1: using class based
+                2: using functuons
+                1:using class based:
+                    in urls.py(account):
+                        from django.contrib.auth import views as auth_views
+                        in urlpatters:
+                            for login:
+                                path('signIn/','auth_views.LoginView.as_view(template_name="accout/signin.html")',name='signIn')
+                                
+                        in setting.py:
+                                LOGIN_REDIRECT_URL='home'
+                            for logout:
+                                path('signOut/',auth_views.LogoutView.as_view(template_name='accout/signOut.html'),name='signOut')

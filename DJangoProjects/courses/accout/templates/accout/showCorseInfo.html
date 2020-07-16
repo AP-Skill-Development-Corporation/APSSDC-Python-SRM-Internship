@@ -1,0 +1,27 @@
+{% extends 'accout/header.html' %}
+{% block title %} add Course{% endblock title %}
+{% block body %}
+<div class="container col-md-6">
+	<table  class="table">
+		<thead>
+			<tr>
+				<th>Course</th>
+				<th>Program Name</th>
+				<th>InstructorName</th>
+				<th>Price</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for info in data %}
+				<tr>
+					<td>{{info.course}}</td>
+					<td>{{info.programName}}</td>
+					<td>{{info.InstructorName}}</td>
+					<td>{{info.price}}</td>
+				</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+	
+</div>
+{% endblock body%}
